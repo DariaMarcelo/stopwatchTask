@@ -1,0 +1,8 @@
+<div class="stopwatch">
+  <div class="time">{{ formatTime() }}</div>
+  <button mat-raised-button color="primary" (click)="startStop()">
+    {{ running ? 'Stop' : 'Start' }}
+  </button>
+  <button mat-raised-button color="accent" (click)="wait()">Wait</button>
+  <button mat-raised-button color="warn" (click)="reset()">Reset</button>
+</div>
