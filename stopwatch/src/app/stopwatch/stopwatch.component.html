@@ -1,0 +1,8 @@
+<div class="stopwatch">
+  <div class="time">{{ (time * 1000) | date : 'HH:mm:ss' : 'GMT-0' }}</div>
+  <button mat-raised-button color="primary" (click)="startStop()">
+    {{ running ? 'Stop' : 'Start' }}
+  </button>
+  <button #waitButton mat-raised-button color="accent">Wait</button>
+  <button mat-raised-button color="warn" (click)="reset()">Reset</button>
+</div>
